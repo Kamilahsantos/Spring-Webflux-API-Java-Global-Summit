@@ -3,8 +3,6 @@ package com.geekle.java.globalsummit.globalsummit.controller;
 
 import com.geekle.java.globalsummit.globalsummit.model.Speaker;
 import com.geekle.java.globalsummit.globalsummit.repository.SpeakerRepository;
-import com.geekle.java.globalsummit.globalsummit.response.ErrorResponse;
-import com.mongodb.DuplicateKeyException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
