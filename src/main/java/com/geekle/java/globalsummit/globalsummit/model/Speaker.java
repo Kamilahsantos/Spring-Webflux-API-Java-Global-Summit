@@ -9,7 +9,6 @@ import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Document(collection = "speakers")
-
 public class Speaker {
 
 

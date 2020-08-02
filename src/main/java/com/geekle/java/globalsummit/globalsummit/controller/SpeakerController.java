@@ -47,7 +47,7 @@ public class SpeakerController {
                     existingSpeaker.setName(speaker.getName());
                     return speakerRepository.save(existingSpeaker);
                 })
-                .map(updateUnicorn -> new ResponseEntity<>(updateUnicorn, HttpStatus.OK))
+                .map(updateSpeaker -> new ResponseEntity<>(updateSpeaker, HttpStatus.OK))
                 .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
