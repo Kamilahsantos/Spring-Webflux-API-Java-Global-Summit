@@ -1,7 +1,6 @@
 package com.geekle.java.globalsummit.globalsummit.controller;
 
 
-import com.geekle.java.globalsummit.globalsummit.exception.SpeakerNotFoundException;
 import com.geekle.java.globalsummit.globalsummit.model.Speaker;
 import com.geekle.java.globalsummit.globalsummit.repository.SpeakerRepository;
 import com.geekle.java.globalsummit.globalsummit.response.ErrorResponse;
@@ -68,11 +67,6 @@ public class SpeakerController {
     }
 
 
-
-    @ExceptionHandler(SpeakerNotFoundException.class)
-    public ResponseEntity handleSpeakerNotFoundException(SpeakerNotFoundException ex) {
-        return ResponseEntity.notFound().build();
-    }
 
 
 }
